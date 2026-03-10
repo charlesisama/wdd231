@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+.logo {
+    display: flex;
+    gap: 1rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+  background-color: gray;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    background-color: black;
+    padding: 1rem;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
+}
+
+.about, .std-photo {
+    background-color: goldenrod;
+    padding: 1rem;
+    border: solid 2px blue;
+    border-radius: 6px;
+}
+
+h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+.course-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer{
+   
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 1rem;
+     background-color: navy;
+    color: #fff;
+}
+
+footer p{
+    margin: .5rem 0;
+    font-size: 0.9rem;
+}
+
+
+
+
+

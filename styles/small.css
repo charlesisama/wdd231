@@ -16,9 +16,6 @@
   box-sizing: border-box;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-}
 
 body {
   margin: 0;
@@ -42,8 +39,6 @@ footer {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
@@ -51,6 +46,7 @@ header {
 }
 
 .site-brand {
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -98,8 +94,8 @@ header {
 }
 
 .navigation a:hover,
-.navigation a:focus-visible,
-.navigation a.active {
+.navigation a:focus-visible
+{
 background-color: #d97706;
   color: #fff;
 }

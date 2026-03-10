@@ -242,3 +242,8 @@ footer p {
   outline: 3px solid #d97706;
   outline-offset: 3px;
 }
+
+/* suggestion for improve lighthouse performance */
+html {
+  -webkit-text-size-adjust: 100%;
+}

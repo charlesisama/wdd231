@@ -1,0 +1,23 @@
+{
+    "familyName" : "Isama",
+    "move_in_date" : "2020-11-07",
+    "numberOfPeople" : "20",
+    "isVisitedByBishopric" : false,
+    "familyMembers" : [
+        {
+            "name" : "Charles",
+            "gender" : "Male",
+            "birthdate" : "1995-11-04"
+        },
+         {
+            "name" : "Mary",
+            "gender" : "Female",
+            "birthdate" : "1980-11-22"
+        },
+         {
+            "name" : "Tolu",
+            "gender" : "Female",
+            "birthdate" : "1997-09-10"
+        }
+    ]
+}

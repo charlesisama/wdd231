@@ -1,0 +1,204 @@
+:root {
+  --primary-color: #1b4965;
+  --secondary-color: #62b6cb;
+  --accent-color: #cae9ff;
+  --background-color: #f4f8fb;
+  --card-color: #ffffff;
+  --text-color: #222222;
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Inter", sans-serif;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+ img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+#menu {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.navigation {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+main {
+  padding: 1rem;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background-color: var(--card-color);
+}
+
+.hero img {
+  min-height: 220px;
+  object-fit: cover;
+}
+
+.cta {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+}
+
+main > h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.events,
+.weather,
+.forecast {
+  background-color: var(--card-color);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.events h2,
+.weather h2,
+.forecast h2 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+}
+
+.events p,
+.weather p,
+.forecast p {
+  padding: 0.35rem 1rem;
+}
+
+.events {
+  min-height: 180px;
+}
+
+.weather {
+    background-color: #f7fcff;
+}
+
+.weatherinfo{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+}
+
+.forecast {
+  background-color: #fcfcfc;
+}
+
+.spotlights {
+  margin-bottom: 2rem;
+}
+
+.spotlights h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.business {
+  background-color: var(--card-color);
+  border-left: 6px solid var(--secondary-color);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.business h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}

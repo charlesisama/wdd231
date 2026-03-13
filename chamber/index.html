@@ -6,124 +6,115 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Port Harcourt Chamber of Commerce</title>
+        <title>WDD 231 - Frontend Development I - Charles Isama | Port Harcourt Chamber of Commerce</title>
 
         <meta name="description" content="Port Harcourt Chamber of Commerce supporting local businesses">
         <meta name="author" content="Charles Isama">
 
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
         <script src="scripts/main.js" defer></script>
 
+         <meta property="og:title" content="Port Harcourt Chamber of Commerce Home Page">
+        <meta property="og:description" content="Port Harcourt Chamber of Commerce supporting local businesses">
+        <meta property="og:image" content= "images/#.jpg">
+        <meta property="og:url" content="index.html">
+
     </head>
 
     <body>
+  <header>
+    <h1>Port Harcourt Chamber of Commerce</h1>
 
-        <header>
+    <button id="menu" aria-label="Open navigation menu">☰</button>
 
-            <h1>Port Harcourt Chamber</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <button id="menu">☰</button>
+  <main>
+    <section class="hero">
+      <img src="images/hero.webp" alt="View of Port Harcourt city" />
+      <div class="cta">
+        <a href="join.html">Join the Chamber</a>
+      </div>
+    </section>
 
-            <nav>
+    <h2>Home</h2>
 
-            <ul class="navigation">
+    <section class="home-grid">
+      <div class="events">
+        <h2>Events</h2>
+        <p>Business networking meetup — March 20</p>
+        <p>Small business growth workshop — March 24</p>
+        <p>Chamber breakfast session — March 28</p>
+      </div>
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-
-            </ul>
-
-            </nav>
-
-        </header>
-
-        <main>
-
-        <section class="hero">
-
-            <img src="images/hero.jpg" alt="Port Harcourt City">
-
-            <div class="cta">
-                <a href="join.html">Join the Chamber</a>
-            </div>
-
-        </section>
-
-
-        <section class="home-grid">
-
-            <div class="events">
-
-                <h2>Events</h2>
-
-                <p>Upcoming business workshops and networking events will be posted here.</p>
-
-            </div>
-
-
-            <div class="weather">
-
-                <h2>Current Weather</h2>
-
-                <p>75°F</p>
-
+      <div class="weather">
+        <h2>Current Weather</h2>
+        <div class="weatherinfo">
+            <div>
+                <p><strong>75°F</strong></p>
                 <p>Partly Cloudy</p>
-
+                <p>High: 85°</p>
+                <p>Low: 52°</p>
+                <p>Humidity: 34%</p>
             </div>
+            <img src="images/weather-icon.svg" alt="weather icon">
+        </div>
+        
+      </div>
 
+      <div class="forecast">
+        <h2>Weather Forecast</h2>
+        <p>Today: <strong>90°F</strong></p>
+        <p>Wednesday: <strong>89°F</strong></p>
+        <p>Thursday: <strong>68°F</strong></p>
+      </div>
+    </section>
 
-            <div class="forecast">
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
 
-                <h2>Weather Forecast</h2>
+      <div class="business">
+        <h3>RivTech Solutions</h3>
+        <p>Business Tag Line</p>
+        <p><strong>Email:</strong> info@rivtech.com</p>
+        <p><strong>Phone:</strong> +234 800 123 4567</p>
+        <p><strong>URL:</strong> rivtech.com</p>
+      </div>
 
-                <p>Today: 90°F</p>
-                <p>Wednesday: 89°F</p>
-                <p>Thursday: 68°F</p>
+      <div class="business">
+        <h3>Niger Delta Farms</h3>
+        <p>Business Tag Line</p>
+        <p><strong>Email:</strong> hello@ndfarms.com</p>
+        <p><strong>Phone:</strong> +234 800 987 6543</p>
+        <p><strong>URL:</strong> ndfarms.com</p>
+      </div>
 
-            </div>
+      <div class="business">
+        <h3>Harbour Logistics</h3>
+        <p>Business Tag Line</p>
+        <p><strong>Email:</strong> contact@harbourlogistics.com</p>
+        <p><strong>Phone:</strong> +234 800 555 2020</p>
+        <p><strong>URL:</strong> harbourlogistics.com</p>
+      </div>
+    </section>
+  </main>
 
-        </section>
-
-
-        <section class="spotlights">
-
-            <h2>Business Spotlights</h2>
-
-            <div class="business">
-
-                <h3>ABC Tech</h3>
-                <p>Innovative technology solutions for businesses.</p>
-
-            </div>
-
-            <div class="business">
-
-                <h3>Green Farms</h3>
-                <p>Organic agricultural products from local farmers.</p>
-
-            </div>
-
-            <div class="business">
-
-                <h3>Port Logistics</h3>
-                <p>Reliable shipping and logistics services.</p>
-
-            </div>
-
-        </section>
-
-        </main>
-
-        <footer>
-            <p>Port Harcourt Chamber of Commerce</p>
-            <p>© <span id="currentyear"></span> ✨ Charles Edache Isama ✨ Nigeria</p>
-            <p id="lastModified"></p>
-        </footer>
-
-    </body>
+  <footer>
+    <p>Port Harcourt Chamber of Commerce</p>
+    <p>© <span id="currentyear"></span> ✨ Charles Edache Isama ✨ Nigeria</p>
+    <p id="lastModified"></p>
+</footer>
+</body>
 </html>

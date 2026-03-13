@@ -1,0 +1,36 @@
+body{
+font-family: "Inter", sans-serif;
+background:#f4f4f4;
+margin:0;
+}
+
+header{
+background:#1B4965;
+color:white;
+text-align:center;
+padding:1rem;
+}
+
+main{
+max-width:800px;
+margin:auto;
+padding:20px;
+}
+
+h1,h2{
+font-family:"Poppins", sans-serif;
+}
+
+section{
+background:white;
+padding:15px;
+margin-bottom:15px;
+border-radius:6px;
+}
+
+footer{
+text-align:center;
+padding:1rem;
+background:#1B4965;
+color:white;
+}

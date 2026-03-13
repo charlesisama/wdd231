@@ -45,6 +45,7 @@ header {
   color: white;
   padding: 1rem;
   box-shadow: var(--shadow);
+  margin-top: 0;
 }
 
 header h1 {
@@ -65,7 +66,7 @@ header h1 {
   list-style: none;
   display: none;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: .5rem;
   margin-top: 1rem;
 }
 
@@ -75,10 +76,11 @@ header h1 {
 
 .navigation a {
   display: block;
-  padding: 0.75rem;
+  padding: .75rem;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 6px;
+  font-weight: 700;
 }
 
 main {
@@ -201,4 +203,23 @@ footer {
 
 footer p {
   margin: 0.3rem 0;
+}
+
+/* //social medial links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
 }

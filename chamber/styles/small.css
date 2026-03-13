@@ -40,6 +40,13 @@ a {
   text-decoration: none;
 }
 
+ .navigation a:hover, 
+  a:active{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-decoration: underline;
+  }
+
 header {
   background-color: var(--primary-color);
   color: white;

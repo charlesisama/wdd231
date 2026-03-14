@@ -70,3 +70,27 @@
     height: 400px;
   }
 }
+
+
+@media screen and (min-width: 768px) {
+  .members.grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .members.list-view .member-card {
+    grid-template-columns: 1.2fr 1.5fr 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .members.list-view .member-card h3,
+  .members.list-view .member-card p {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .members.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Directory | Port Harcourt Chamber of Commerce</title>
+
+  <meta name="description" content="Explore member businesses in the Port Harcourt Chamber of Commerce directory.">
+  <meta name="author" content="Charles Isama">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="Port Harcourt Chamber Directory">
+  <meta property="og:description" content="View businesses and member organizations in the Port Harcourt Chamber of Commerce directory.">
+  <meta property="og:image" content="https://charlesisama.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://charlesisama.github.io/wdd231/chamber/directory.html">
+
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Port Harcourt Chamber of Commerce</h1>
+
+    <button id="menu" aria-label="Open navigation menu">☰</button>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="directory-header">
+      <h2>Business Directory</h2>
+
+      <div class="view-buttons">
+        <button id="gridView" aria-label="Display members in grid view">▦</button>
+        <button id="listView" aria-label="Display members in list view">☰</button>
+      </div>
+    </section>
+
+    <section id="members" class="members grid-view"></section>
+  </main>
+
+  <footer>
+    <p>Port Harcourt Chamber of Commerce</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+      </a>
+      <a href="https://github.com/charlesisama" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+        <img src="images/github.svg" alt="GitHub" width="40" height="40">
+      </a>
+      <a href="https://www.instagram.com/charlesisama" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+        <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+      </a>
+    </div>
+
+    <p>© <span id="currentyear"></span> ✨ Charles Edache Isama - WDD231 ✨ Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

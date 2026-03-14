@@ -1,0 +1,72 @@
+[
+  {
+    "name": "RivTech Solutions",
+    "address": "12 Aba Road, Port Harcourt, Rivers State",
+    "phone": "+234 800 123 4567",
+    "website": "https://www.rivtechsolutions.com",
+    "image": "rivtech.webp",
+    "membership": 3,
+    "industry": "Technology Services",
+    "description": "Digital solutions and IT support for businesses in Port Harcourt."
+  },
+  {
+    "name": "Niger Delta Farms",
+    "address": "45 East-West Road, Port Harcourt, Rivers State",
+    "phone": "+234 800 987 6543",
+    "website": "https://www.nigerdeltafarms.com",
+    "image": "nigerdeltafarms.webp",
+    "membership": 2,
+    "industry": "Agriculture",
+    "description": "Supplies fresh farm produce and agro-based products."
+  },
+  {
+    "name": "Harbour Logistics",
+    "address": "8 Trans Amadi Industrial Layout, Port Harcourt, Rivers State",
+    "phone": "+234 800 555 2020",
+    "website": "https://www.harbourlogistics.com",
+    "image": "harbourlogistics.webp",
+    "membership": 3,
+    "industry": "Logistics",
+    "description": "Reliable cargo handling, freight, and delivery services."
+  },
+  {
+    "name": "Bonny Marine Services",
+    "address": "21 Olu Obasanjo Road, Port Harcourt, Rivers State",
+    "phone": "+234 803 222 4455",
+    "website": "https://www.bonnymarine.com",
+    "image": "bonnymarine.webp",
+    "membership": 1,
+    "industry": "Marine Services",
+    "description": "Provides marine support and vessel services for offshore operations."
+  },
+  {
+    "name": "Garden City Prints",
+    "address": "30 GRA Phase 2, Port Harcourt, Rivers State",
+    "phone": "+234 809 345 8890",
+    "website": "https://www.gardencityprints.com",
+    "image": "gardencityprints.webp",
+    "membership": 2,
+    "industry": "Printing and Branding",
+    "description": "Printing, branding, and promotional materials for local businesses."
+  },
+  {
+    "name": "PH Wellness Clinic",
+    "address": "5 Stadium Road, Port Harcourt, Rivers State",
+    "phone": "+234 807 112 3344",
+    "website": "https://www.phwellnessclinic.com",
+    "image": "phwellness.webp",
+    "membership": 1,
+    "industry": "Healthcare",
+    "description": "Affordable healthcare and wellness services for families and workers."
+  },
+  {
+    "name": "Delta Energy Consult",
+    "address": "18 Woji Road, Port Harcourt, Rivers State",
+    "phone": "+234 806 765 4321",
+    "website": "https://www.deltaenergyconsult.com",
+    "image": "deltaenergy.webp",
+    "membership": 3,
+    "industry": "Energy Consulting",
+    "description": "Engineering and energy advisory services for industrial clients."
+  }
+]

@@ -7,6 +7,17 @@
     padding: 1rem 2rem;
   }
 
+   header {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .brand {
+    margin-bottom: 0;
+  }
+
   header h1 {
     margin-bottom: 0;
     font-size: 1.7rem;
@@ -32,12 +43,26 @@
     padding: 0.5rem 0.8rem;
   }
 
+  .filters {
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+  }
+
+    .members.grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
  
 
   main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.5rem;
+  }
+
+   .hero {
+    grid-template-columns: 2fr 1fr;
   }
 
   .hero img {
@@ -68,6 +93,9 @@
 @media screen and (min-width: 1024px) {
   .hero img {
     height: 400px;
+  }
+  .members.grid-view {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

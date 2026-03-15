@@ -19,70 +19,74 @@
 
         <script src="scripts/main.js" defer></script>
 
-         <meta property="og:title" content="Port Harcourt Chamber of Commerce Home Page">
+        <meta property="og:title" content="Port Harcourt Chamber of Commerce Home Page">
         <meta property="og:description" content="Port Harcourt Chamber of Commerce supporting local businesses">
         <meta property="og:image" content="https://charlesisama.github.io/wdd231/chamber/images/hero.webp">
-<meta property="og:url" content="https://charlesisama.github.io/wdd231/chamber/index.html">
+        <meta property="og:url" content="https://charlesisama.github.io/wdd231/chamber/index.html">
+
+        <link rel="icon" href="images/logo.webp" type="image/webp">
+        <link rel="icon" href="images/favicon.ico">
 
     </head>
 
     <body>
-  <header>
-    <h1>Port Harcourt Chamber of Commerce</h1>
+ <header>
+  <div class="brand">
+    <a href="index.html" class="brand-link">
+      <img src="images/logo.webp" alt="Port Harcourt Chamber of Commerce logo" class="site-logo" width="70" height="70">
+      <div class="brand-text">
+        <span class="brand-name">Port Harcourt</span>
+        <span class="brand-subtitle">Chamber of Commerce</span>
+      </div>
+    </a>
+  </div>
 
-    <button id="menu" aria-label="Open navigation menu">☰</button>
+  <button id="menu" aria-label="Open navigation menu">☰</button>
 
-    <nav>
-      <ul class="navigation">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
     <section class="hero">
-      <img src="images/hero.webp" alt="View of Port Harcourt city" />
-      <div class="cta">
-        <a href="join.html">Join the Chamber</a>
-      </div>
-    </section>
+  <div class="hero-slider">
+    <div class="slide active">
+      <img src="images/hero.webp" alt="Port Harcourt business district">
+      <div class="slide-caption">Port Harcourt Business Community</div>
+    </div>
 
-    <h2>Home</h2>
+    <div class="slide">
+      <img src="images/rivtech.webp" alt="RivTech Solutions">
+      <div class="slide-caption">RivTech Solutions</div>
+    </div>
 
-    <section class="home-grid">
-      <div class="events">
-        <h2>Events</h2>
-        <p>Business networking meetup — March 20</p>
-        <p>Small business growth workshop — March 24</p>
-        <p>Chamber breakfast session — March 28</p>
-      </div>
+    <div class="slide">
+      <img src="images/nigerdeltafarms.webp" alt="Niger Delta Farms">
+      <div class="slide-caption">Niger Delta Farms</div>
+    </div>
 
-      <div class="weather">
-        <h2>Current Weather</h2>
-        <div class="weatherinfo">
-            <div>
-                <p><strong>75°F</strong></p>
-                <p>Partly Cloudy</p>
-                <p>High: 85°</p>
-                <p>Low: 52°</p>
-                <p>Humidity: 34%</p>
-            </div>
-            <img src="images/weather-icon.svg" alt="weather icon">
-        </div>
-        
-      </div>
+    <div class="slide">
+      <img src="images/harbourlogistics.webp" alt="Harbour Logistics">
+      <div class="slide-caption">Harbour Logistics</div>
+    </div>
+  </div>
 
-      <div class="forecast">
-        <h2>Weather Forecast</h2>
-        <p>Today: <strong>90°F</strong></p>
-        <p>Wednesday: <strong>89°F</strong></p>
-        <p>Thursday: <strong>68°F</strong></p>
-      </div>
-    </section>
-
+  <div class="hero-text">
+    <h2>Connecting Businesses in Port Harcourt</h2>
+    <p>
+      The Port Harcourt Chamber of Commerce supports local enterprises,
+      promotes innovation, and creates opportunities for business growth
+      across Rivers State.
+    </p>
+    <a href="join.html" class="hero-btn">Join the Chamber</a>
+  </div>
+</section>
     <section class="spotlights">
       <h2>Business Spotlights</h2>
 

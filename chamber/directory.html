@@ -22,35 +22,65 @@
   <meta property="og:url" content="https://charlesisama.github.io/wdd231/chamber/directory.html">
 
   <script src="scripts/main.js" defer></script>
+  <link rel="icon" href="images/logo.webp" type="image/webp">
+  <link rel="icon" href="images/favicon.ico">
+        
 </head>
 <body>
   <header>
-    <h1>Port Harcourt Chamber of Commerce</h1>
-
-    <button id="menu" aria-label="Open navigation menu">☰</button>
-
-    <nav>
-      <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="directory-header">
-      <h2>Business Directory</h2>
-
-      <div class="view-buttons">
-        <button id="gridView" aria-label="Display members in grid view">Grid-View ▦</button>
-        <button id="listView" aria-label="Display members in list view">List ☰</button>
+  <div class="brand">
+    <a href="index.html" class="brand-link">
+      <img src="images/logo.webp" alt="Port Harcourt Chamber of Commerce logo" class="site-logo" width="70" height="70">
+      <div class="brand-text">
+        <span class="brand-name">Port Harcourt</span>
+        <span class="brand-subtitle">Chamber of Commerce</span>
       </div>
-    </section>
+    </a>
+  </div>
 
-    <section id="members" class="members grid-view"></section>
-  </main>
+  <button id="menu" aria-label="Open navigation menu">☰</button>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html" class="active">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+</header>
+
+ <main>
+  <section class="directory-header">
+    <h2>Business Directory</h2>
+
+    <div class="filters">
+      <label>
+        Membership
+        <select id="membershipFilter">
+          <option value="all">All Memberships</option>
+          <option value="3">Gold</option>
+          <option value="2">Silver</option>
+          <option value="1">Member</option>
+        </select>
+      </label>
+
+      <label>
+        Industry
+        <select id="industryFilter">
+          <option value="all">All Industries</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="view-buttons">
+      <button id="gridView" aria-label="Display members in grid view">Grid-View ▦</button>
+      <button id="listView" aria-label="Display members in list view">List ☰</button>
+    </div>
+  </section>
+
+  <section id="members" class="members grid-view"></section>
+</main>
 
   <footer>
     <p>Port Harcourt Chamber of Commerce</p>

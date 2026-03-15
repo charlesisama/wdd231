@@ -54,7 +54,7 @@ function displayMembers(members) {
         : "Member";
 
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="300" height="200">
+      <img src="images/${member.image}" alt="${member.name} logo" loading="lazy" width="400" height="400">
       <h3>${member.name}</h3>
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Phone:</strong> ${member.phone}</p>

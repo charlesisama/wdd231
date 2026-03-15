@@ -1,18 +1,7 @@
 @media screen and (min-width: 768px) {
-  nav {
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 2rem;
-  }
+ 
 
-   header {
-    display: grid;
-    grid-template-columns: auto auto 1fr;
-    align-items: center;
-    gap: 1rem;
-  }
+  
 
   .brand {
     margin-bottom: 0;
@@ -30,10 +19,11 @@
   nav {
     justify-self: end;
   }
-
-  .navigation {
+  
+ .navigation {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
+    
     gap: 1rem;
     margin-top: 0;
   }

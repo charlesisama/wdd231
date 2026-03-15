@@ -15,7 +15,7 @@ menuButton.addEventListener("click", () => {
   navigation.classList.toggle("open");
 });
 
-
+// Directory Page memembers
 const membersContainer = document.querySelector("#members");
 const gridButton = document.querySelector("#gridView");
 const listButton = document.querySelector("#listView");
@@ -45,6 +45,7 @@ function displayMembers(members) {
     const card = document.createElement("article");
     card.classList.add("member-card");
 
+        //level of membership
     const membershipText =
       member.membership === 3
         ? "Gold Member"
@@ -67,6 +68,7 @@ function displayMembers(members) {
   });
 }
 
+//evnt listener if grid button is clicked
 if (gridButton && listButton && membersContainer) {
   gridButton.addEventListener("click", () => {
     membersContainer.classList.add("grid-view");

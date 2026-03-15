@@ -126,9 +126,6 @@ main {
   opacity: 1;
 }
 
-.slide.active {
-  opacity: 1;
-}
 
 .slide img {
   width: 100%;
@@ -197,6 +194,11 @@ main {
 
 main > h2 {
   margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+h1{
+   margin-bottom: 1rem;
   color: var(--primary-color);
 }
 
@@ -459,12 +461,6 @@ footer p {
   gap: 0;
 }
 
-
-.members.list-view {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
 
 .members.list-view .member-card {
   display: grid;

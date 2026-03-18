@@ -1,5 +1,6 @@
-function setSectionSelection() {
+export function setSectionSelection(sections) {
   const sectionSelect = document.querySelector("#sectionNumber");
+
     sections.forEach((section) => {
     const option = document.createElement("option");
     option.value = section.sectionNumber;
@@ -8,4 +9,3 @@ function setSectionSelection() {
   });
 }
 
-export function setSectionSelection(sections){};

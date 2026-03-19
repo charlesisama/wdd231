@@ -1,6 +1,6 @@
 
 
-
+//import
 import byuiCourse from "./course.mjs";
 import { setSectionSelection } from "./section.mjs";
 import { setTitle , renderSections} from "./output.mjs";

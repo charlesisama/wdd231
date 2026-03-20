@@ -53,7 +53,7 @@ apiFetch();
 function displayResults(data1) {
   currentTemp.innerHTML = `${data1.main.temp}&deg;C`;
   humidity.innerHTML = `${data1.main.humidity}%`;
-  const iconsrc = `https://openweathermap.org/img/w/${data1.weather[0].icon}.png`;
+  const iconsrc = `https://openweathermap.org/img/wn/${data1.weather[0].icon}@2x.png`;
   let desc = data1.weather[0].description;
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);

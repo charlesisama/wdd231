@@ -351,6 +351,11 @@ footer p {
   height: 40px;
 }
 
+.temp, .humidity{
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 
 
 

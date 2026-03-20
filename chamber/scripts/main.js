@@ -159,3 +159,79 @@ function showNextSlide() {
 if (slides.length > 0) {
   setInterval(showNextSlide, 8000);
 }
+
+
+
+//Current Weather API
+const currentTemp = document.querySelector("#current-temp");
+const weatherIcon = document.querySelector("#weather-icon");
+const captionDesc = document.querySelector('figcaption');
+const humidity = document.querySelector("#humidity");
+
+
+const url ="https://api.openweathermap.org/data/2.5/weather?lat=4.85&lon=7.02&appid=309a5ec2598cc481527ac9ddd30fa173&units=imperial";
+
+async function apiFetch(){
+    try {
+        const response = await fetch(url);
+        if (response.ok) { 
+        const data = await response.json();
+        // console.log(data);
+        displayResults(data);
+        }
+        else{
+            throw Error(await response.text());
+        }
+        
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
+
+
+function displayResults(data) {
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  humidity.innerHTML = `${data.main.humidity}%`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = `${desc}`;
+}
+
+
+//Weather Forecast
+const today = document.querySelector("today-temp");
+const nextday = document.querySelector("nextday-temp");
+const nextTomorrow = document.querySelector("nextTomorrow-temp");
+
+
+const url1 = "api.openweathermap.org/data/2.5/forecast/daily?lat=4.85&lon=7.02&cnt=3&appid=309a5ec2598cc481527ac9ddd30fa173&units=metric";
+
+async function apiFetch1(){
+    try {
+        const response = await fetch(url1);
+        if (response.ok) { 
+        const data = await response.json();
+        displayResults(data);
+        }
+        else{
+            throw Error(await response.text());
+        }
+        
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch1();
+
+
+function displayResults(data) {
+  today.innerHTML = `${data.list[0].temp.day}&deg;F`;
+  nextday.innerHTML = `${data.list[1].temp.day}&deg;F`;
+  nextTomorrow.innerHTML = `${data.list[2].temp.day}&deg;F`;
+ 
+}

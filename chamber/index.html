@@ -106,22 +106,23 @@
         <h2>Current Weather</h2>
         <div class="weatherinfo">
             <div>
-                <p><strong>75°F</strong></p>
-                <p>Partly Cloudy</p>
-                <p>High: 85°</p>
-                <p>Low: 52°</p>
-                <p>Humidity: 34%</p>
+                <p>Temperature: <strong><span class="current-temp"></span></strong></p>
+                <p>Humidity: <span id="humidity">  </span></p>
             </div>
-            <img src="images/weather-icon.svg" alt="weather icon">
+            <figure>
+              <img id="weather-icon" src="" alt="">
+              <figcaption></figcaption>
+            </figure>
+            
         </div>
         
       </div>
 
       <div class="forecast">
         <h2>Weather Forecast</h2>
-        <p>Today: <strong>90°F</strong></p>
-        <p>Wednesday: <strong>89°F</strong></p>
-        <p>Thursday: <strong>68°F</strong></p>
+        <p>Today: <strong><span id="today-temp"></span></strong></p>
+        <p>Wednesday: <strong><span id="nextday-temp"></span></strong></p>
+        <p>Thursday: <strong><span id="nextTomorrow-temp"></span></strong></p>
       </div>
     </section>
 

@@ -6,8 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>WDD 231 - Frontend Development I - Charles Isama | Port Harcourt Chamber of Commerce</title>
-
+        <title>Port Harcourt Chamber of Commerce | Home</title>
         <meta name="description" content="Port Harcourt Chamber of Commerce supporting local businesses">
         <meta name="author" content="Charles Isama">
 
@@ -19,7 +18,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-        <script src="scripts/main.js" defer></script>
+        <script src="scripts/weather.mjs" defer></script>
 
         <meta property="og:title" content="Port Harcourt Chamber of Commerce Home Page">
         <meta property="og:description" content="Port Harcourt Chamber of Commerce supporting local businesses">
@@ -96,7 +95,7 @@
 
     <section class="home-grid">
       <div class="events">
-        <h2>Events</h2>
+        <h2>Upcoming Events</h2>
         <p>Business networking meetup — March 20</p>
         <p>Small business growth workshop — March 24</p>
         <p>Chamber breakfast session — March 28</p>
@@ -106,8 +105,8 @@
         <h2>Current Weather</h2>
         <div class="weatherinfo">
             <div>
-                <p>Temperature: <strong><span class="current-temp"></span></strong></p>
-                <p>Humidity: <span id="humidity">  </span></p>
+                <p>Temperature: <strong><span id="current-temp"></span></strong></p>
+                <p>Humidity: <strong><span id="humidity"></span></strong></p>
             </div>
             <figure>
               <img id="weather-icon" src="" alt="">
@@ -121,37 +120,14 @@
       <div class="forecast">
         <h2>Weather Forecast</h2>
         <p>Today: <strong><span id="today-temp"></span></strong></p>
-        <p>Wednesday: <strong><span id="nextday-temp"></span></strong></p>
-        <p>Thursday: <strong><span id="nextTomorrow-temp"></span></strong></p>
+        <p>Tomorrow: <strong><span id="nextday-temp"></span></strong></p>
+        <p>Next-Tomorrow: <strong><span id="nextTomorrow-temp"></span></strong></p>
       </div>
     </section>
 
     <section class="spotlights">
       <h2>Business Spotlights</h2>
-
-      <div class="business">
-        <h3>RivTech Solutions</h3>
-        <p>Business Tag Line</p>
-        <p><strong>Email:</strong> info@rivtech.com</p>
-        <p><strong>Phone:</strong> +234 800 123 4567</p>
-        <p><strong>URL:</strong> rivtech.com</p>
-      </div>
-
-      <div class="business">
-        <h3>Niger Delta Farms</h3>
-        <p>Business Tag Line</p>
-        <p><strong>Email:</strong> hello@ndfarms.com</p>
-        <p><strong>Phone:</strong> +234 800 987 6543</p>
-        <p><strong>URL:</strong> ndfarms.com</p>
-      </div>
-
-      <div class="business">
-        <h3>Harbour Logistics</h3>
-        <p>Business Tag Line</p>
-        <p><strong>Email:</strong> contact@harbourlogistics.com</p>
-        <p><strong>Phone:</strong> +234 800 555 2020</p>
-        <p><strong>URL:</strong> harbourlogistics.com</p>
-      </div>
+      
     </section>
   </main>
 

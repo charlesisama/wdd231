@@ -36,6 +36,23 @@ if (slides.length > 0) {
   setInterval(showNextSlide, 5000);
 }
 
+//getting current days of the week
+
+const tomorrow = document.querySelector("#tomorrow");
+const nextTomorrow = document.querySelector("#next-tomorrow");
+const twodays = document.querySelector("#twodays");
+
+
+const days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
+
+const todayIndex = new Date().getDay();
+
+
+
+tomorrow.textContent = days[(todayIndex + 1) %7];
+nextTomorrow.textContent = days[(todayIndex + 2) %7];
+twodays.textContent = days[(todayIndex + 3) %7];
+
 
 //Current Weather API
 const currentTemp = document.querySelector("#current-temp");
@@ -79,9 +96,9 @@ function displayResults(data1) {
 
 
 //Weather Forecast
-const today = document.querySelector("#today-temp");
-const nextday = document.querySelector("#nextday-temp");
-const nextTomorrow = document.querySelector("#nextTomorrow-temp");
+const todayTemp = document.querySelector("#today-temp");
+const nextdayTemp = document.querySelector("#nextday-temp");
+const nextTomorrowTemp= document.querySelector("#nextTomorrow-temp");
 
 
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=4.85&lon=7.02&appid=309a5ec2598cc481527ac9ddd30fa173&units=metric";
@@ -103,9 +120,9 @@ async function apiFetchForecast() {
 function displayForecast(data) {
   const filtered = data.list.filter(item => item.dt_txt.includes("12:00:00"));
 
-  today.innerHTML = `${filtered[0].main.temp}&deg;C`;
-  nextday.innerHTML = `${filtered[1].main.temp}&deg;C`;
-  nextTomorrow.innerHTML = `${filtered[2].main.temp}&deg;C`;
+  todayTemp.innerHTML = `${filtered[0].main.temp}&deg;C`;
+  nextdayTemp.innerHTML = `${filtered[1].main.temp}&deg;C`;
+  nextTomorrowTemp.innerHTML = `${filtered[2].main.temp}&deg;C`;
 }
 
 apiFetchForecast();
@@ -166,3 +183,4 @@ function displaySpotlights(members) {
 }
 
 loadSpotlights();
+

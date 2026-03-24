@@ -250,6 +250,18 @@ footer p {
   outline-offset: 3px;
 }
 
+.courseTitle{
+  display: flex;
+  gap: 1rem;
+  background-color: navy;
+  color: #fff;
+}
+
+#closeModal{
+  position: relative;
+  left: 14rem;
+}
+
 /* suggestion for improve lighthouse performance */
 html {
   -webkit-text-size-adjust: 100%;

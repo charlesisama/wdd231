@@ -35,30 +35,27 @@ const courseContainer = document.getElementById("courseContainer");
 const creditsDisplay = document.getElementById("credits");
 
 const courseDetails = document.querySelector("#course-details");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
 
 //modal event listener
 
-function displayCourseDetails (course){
-  courseDetails.innerHTML ="";
+function displayCourseDetails(course) {
   courseDetails.innerHTML = `
-    <button id = "closeModal">❌</button>
-    <h2> ${course.subject} ${course.number}</h2>
-    <h3> ${course.title} </h3>
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
     <p><strong>Credits</strong>: ${course.credits}</p>
     <p><strong>Certification</strong>: ${course.certificate}</p>
     <p>${course.description}</p>
-    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
-    `;
+    <p><strong>Technologies</strong>: ${course.technology}</p>
+  `;
 
-    openModal.addEventListener("click", ()=> {
-    courseDetails.showModal();
-    });
+  
+  courseDetails.showModal();
 
-    closeModal.addEventListener("click", ()=>{
+  const closeBtn = document.getElementById("closeModal");
+  closeBtn.addEventListener("click", () => {
     courseDetails.close();
-    });
+  });
 }
 
  
@@ -75,7 +72,7 @@ function displayCourses(courseList) {
     courseCard.addEventListener("click", ()=>{
       displayCourseDetails(course);
     });
-    
+
     courseCard.classList.add("course-card");
     courseCard.classList.add("open-button");
 
@@ -90,10 +87,11 @@ function displayCourses(courseList) {
   });
 
   
-
   const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
   creditsDisplay.textContent = `The total credits for courses listed above is ${totalCredits}`;
 }
+
+
 
 document.getElementById("all").addEventListener("click", () => {
   displayCourses(courses);

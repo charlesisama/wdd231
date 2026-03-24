@@ -23,23 +23,61 @@ navToggle.addEventListener("click", () => {
 
 // Course data
 const courses = [
-  { subject: "WDD", number: 130, title: "Web Fundamentals", credits: 2, completed: true },
-  { subject: "WDD", number: 131, title: "Dynamic Web Fundamentals", credits: 2, completed: true },
-  { subject: "WDD", number: 231, title: "Frontend Development I", credits: 2, completed: false },
-  { subject: "CSE", number: 110, title: "Introduction to Programming", credits: 2, completed: true },
-  { subject: "CSE", number: 111, title: "Programming with Functions", credits: 2, completed: true },
-  { subject: "CSE", number: 210, title: "Programming with Classes", credits: 2, completed: true }
+  { subject: "WDD", number: 130, title: "Web Fundamentals", credits: 2, completed: true, description: "web fundamentals", certificate: "web developemnt certificate", technology: "information technology" },
+  { subject: "WDD", number: 131, title: "Dynamic Web Fundamentals", credits: 2, completed: true, description: " Dynamic web fundamentals", certificate: "web developemnt certificate", technology: "information technology" },
+  { subject: "WDD", number: 231, title: "Frontend Development I", credits: 2, completed: false, description: " Dynamic web fundamentalsjhgfjglfgflgkf;gk;k;flflk", certificate: "web developemnt certificate", technology: "information technology" },
+  { subject: "CSE", number: 110, title: "Introduction to Programming", credits: 2, completed: true, description: " Dynamic web fundamentalsljlgjfgjfgjfiogfgfglllllll", certificate: "web developemnt certificate", technology: "information technology" },
+  { subject: "CSE", number: 111, title: "Programming with Functions", credits: 2, completed: true, description: " Dynamic web fundamjjkljfkljfiroioientals", certificate: "web developemnt certificate", technology: "information technology" },
+  { subject: "CSE", number: 210, title: "Programming with Classes", credits: 2, completed: true, description: " Dynamic web fundamjgfjglgjflentals", certificate: "web developemnt certificate", technology: "information technology" }
 ];
 
 const courseContainer = document.getElementById("courseContainer");
 const creditsDisplay = document.getElementById("credits");
 
+const courseDetails = document.querySelector("#course-details");
+const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".close-button");
+
+//modal event listener
+
+function displayCourseDetails (course){
+  courseDetails.innerHTML ="";
+  courseDetails.innerHTML = `
+    <button id = "closeModal">❌</button>
+    <h2> ${course.subject} ${course.number}</h2>
+    <h3> ${course.title} </h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certification</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+    `;
+
+    openModal.addEventListener("click", ()=> {
+    courseDetails.showModal();
+    });
+
+    closeModal.addEventListener("click", ()=>{
+    courseDetails.close();
+    });
+}
+
+ 
+
+
+
+
 function displayCourses(courseList) {
   courseContainer.innerHTML = "";
-
+  
   courseList.forEach((course) => {
-    const courseCard = document.createElement("div");
+    const courseCard = document.createElement("button");
+
+    courseCard.addEventListener("click", ()=>{
+      displayCourseDetails(course);
+    });
+    
     courseCard.classList.add("course-card");
+    courseCard.classList.add("open-button");
 
     if (course.completed) {
       courseCard.classList.add("completed");
@@ -47,7 +85,11 @@ function displayCourses(courseList) {
 
     courseCard.textContent = `${course.subject} ${course.number}`;
     courseContainer.appendChild(courseCard);
+
+    
   });
+
+  
 
   const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
   creditsDisplay.textContent = `The total credits for courses listed above is ${totalCredits}`;

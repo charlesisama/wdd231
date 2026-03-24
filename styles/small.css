@@ -196,6 +196,13 @@ h1 {
   font-weight: 700;
 }
 
+#courseContainer button:hover, 
+#courseContainer button:focus-visible{
+  background-color: #d97706;
+  color: #fff;
+  border-color: #d97706;
+}
+
 .course-card.completed {
   background-color: #14532d;
   color: #fff;

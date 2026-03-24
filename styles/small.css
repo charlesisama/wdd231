@@ -251,16 +251,39 @@ footer p {
 }
 
 .courseTitle{
-  display: flex;
-  flex-direction: row;
-  gap: 20rem;
+  position: relative;
+  gap: 1rem;
   background-color: navy;
   color: #fff;
   padding: 0.75rem;
 }
 
+#closeModal{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#course-details{
+  background-color: var(--backgrd-color);
+  font: var(--body-font);
+  color: var(--primary-color);
+}
+
+#course-details::backdrop{
+  background-color: rgba(195, 235, 234, 0.5);
+}
+
+
+#course-details button:focus-visible, 
+#course-details button:hover{
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+}
 
 /* suggestion for improve lighthouse performance */
 html {
   -webkit-text-size-adjust: 100%;
 }
+

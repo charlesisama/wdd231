@@ -89,7 +89,7 @@ function displayCourses(courseList) {
   });
 
   
-  const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
+  const totalsCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
   creditsDisplay.textContent = `The total credits for courses listed above is ${totalCredits}`;
 }
 

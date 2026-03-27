@@ -78,6 +78,10 @@
   .business {
     margin-bottom: 0;
   }
+
+  .join-layout {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1024px) {

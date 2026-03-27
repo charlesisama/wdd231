@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Join | Port Harcourt Chamber</title>
+
+  <meta name="description" content="Apply to join the Port Harcourt Chamber of Commerce">
+  <meta name="author" content="Charles Isama">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <a href="index.html" class="brand-link">
+      <img src="images/logo.webp" alt="Chamber Logo" class="site-logo">
+      <div class="brand-text">
+        <span class="brand-name">Port Harcourt</span>
+        <span class="brand-subtitle">Chamber of Commerce</span>
+      </div>
+    </a>
+  </div>
+
+  <button id="menu">☰</button>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Join the Chamber</h1>
+
+  <div class="join-layout">
+
+    
+    <form method="get" action="thankyou.html" class="join-form">
+
+      <label title="Enter your first name">
+        First Name*
+        <input type="text" name="fname" required autocomplete="given-name">
+      </label>
+
+      <label title="Enter your last name">
+        Last Name*
+        <input type="text" name="lname" required autocomplete="family-name">
+      </label>
+
+      <label title="Your role in the organization">
+        Organizational Title
+        <input type="text" name="orgtitle"
+          autocomplete="organization-title"
+          pattern="[A-Za-z\s\-]{7,}">
+      </label>
+
+      <label title="Enter your email address">
+        Email*
+        <input type="email" name="email" required
+          autocomplete="email"
+          placeholder="example@email.com">
+      </label>
+
+      <label title="Enter your phone number">
+        Mobile Phone*
+        <input type="tel" name="phone" required autocomplete="tel">
+      </label>
+
+      <label title="Business name">
+        Business/Organization Name*
+        <input type="text" name="business" required autocomplete="organization">
+      </label>
+
+      
+      <label title="Select membership level">
+        Membership Level
+        <select name="membership">
+          <option value="np">NP Membership (Free)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label title="Describe your business">
+        Business Description
+        <textarea name="description"></textarea>
+      </label>
+
+      
+      <input type="hidden" id="timestamp" name="timestamp">
+
+  
+      <input type="submit" value="Apply for Membership">
+
+    </form>
+
+    <!-- MEMBERSHIP CARDS -->
+    <section class="membership-cards">
+
+      <div class="card animate">
+        <h3>NP Membership</h3>
+        <p>No fee for non-profits.</p>
+        <a href="#" data-modal="npModal">Learn More</a>
+      </div>
+
+      <div class="card animate">
+        <h3>Bronze</h3>
+        <p>Basic exposure.</p>
+        <a href="#" data-modal="bronzeModal">Learn More</a>
+      </div>
+
+      <div class="card animate">
+        <h3>Silver</h3>
+        <p>More visibility.</p>
+        <a href="#" data-modal="silverModal">Learn More</a>
+      </div>
+
+      <div class="card animate">
+        <h3>Gold</h3>
+        <p>Premium benefits.</p>
+        <a href="#" data-modal="goldModal">Learn More</a>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+  <dialog id="npModal">
+    <h3>NP Membership</h3>
+    <p>Free access to events and networking.</p>
+    <button class="close">Close</button>
+  </dialog>
+
+  <dialog id="bronzeModal">
+    <h3>Bronze Membership</h3>
+    <p>Includes directory listing and basic promotion.</p>
+    <button class="close">Close</button>
+  </dialog>
+
+  <dialog id="silverModal">
+    <h3>Silver Membership</h3>
+    <p>Includes training, events, and spotlight features.</p>
+    <button class="close">Close</button>
+  </dialog>
+
+  <dialog id="goldModal">
+    <h3>Gold Membership</h3>
+    <p>Includes premium advertising and homepage spotlight.</p>
+    <button class="close">Close</button>
+  </dialog>
+
+</main>
+
+<footer>
+    <p>Port Harcourt Chamber of Commerce</p>
+
+    <div class="social-links">
+      
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+      </a>
+      <a href="https://github.com/charlesisama" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+        <img src="images/github.svg" alt="GitHub" width="40" height="40">
+      </a>
+      <a href="https://www.instagram.com/charlesisama" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+        <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+      </a>
+    </div>
+
+    <p>© <span id="currentyear"></span> ✨ Charles Edache Isama - WDD231 ✨ Nigeria</p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

@@ -522,3 +522,189 @@ footer p {
   font-family: var(--body-font);
   background-color: white;
 }
+
+/* join page */
+
+
+.join-layout {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+
+
+/* =========================
+   join FORM STYLING
+   ========================= */
+
+.join-form {
+  display: grid;
+  gap: 1rem;
+  background: var(--card-color);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: var(--primary-color);
+  gap: 0.3rem;
+}
+
+/* Inputs */
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: var(--body-font);
+  font-size: 0.95rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px rgba(98, 182, 203, 0.5);
+}
+
+/* Submit Button */
+.join-form input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.9rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.join-form input[type="submit"]:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* MEMBERSHIP CARDS*/
+
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+
+.membership-cards .card {
+  background: linear-gradient(135deg, #ffffff, #f4f8fb);
+  border-left: 5px solid var(--secondary-color);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift */
+.membership-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.membership-cards h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+.membership-cards p {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Link button */
+.membership-cards a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.membership-cards a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* ANIMATION */
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animate:nth-child(1) { animation-delay: 0.1s; }
+.animate:nth-child(2) { animation-delay: 0.3s; }
+.animate:nth-child(3) { animation-delay: 0.5s; }
+.animate:nth-child(4) { animation-delay: 0.7s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MODA STYLING*/
+
+dialog {
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  justify-self: center;
+  align-self: center;
+}
+
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+dialog h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+dialog p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+
+dialog .close {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+dialog .close:hover {
+  background-color: var(--primary-color);
+  color: white;
+}

@@ -7,13 +7,27 @@
   <title>Join | Port Harcourt Chamber</title>
 
   <meta name="description" content="Apply to join the Port Harcourt Chamber of Commerce">
-  <meta name="author" content="Charles Isama">
+  <meta name="author" content="Charles Issama">
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
   <script src="scripts/join.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="Port Harcourt Chamber Join page">
+  <meta property="og:description" content="Join the Port Harcourt Chamber">
+  <meta property="og:image" content="https://charlesisama.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://charlesisama.github.io/wdd231/chamber/join.html">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+
 </head>
 
 <body>
@@ -49,36 +63,36 @@
     
     <form method="get" action="thankyou.html" class="join-form">
 
-      <label title="Enter your first name">
+      <label title="First Nmae">
         First Name*
         <input type="text" name="fname" required autocomplete="given-name">
       </label>
 
-      <label title="Enter your last name">
+      <label title="Last Name">
         Last Name*
         <input type="text" name="lname" required autocomplete="family-name">
       </label>
 
-      <label title="Your role in the organization">
+      <label title="Organization Title">
         Organizational Title
         <input type="text" name="orgtitle"
           autocomplete="organization-title"
           pattern="[A-Za-z\s\-]{7,}">
       </label>
 
-      <label title="Enter your email address">
+      <label title="Email Address">
         Email*
         <input type="email" name="email" required
           autocomplete="email"
           placeholder="example@email.com">
       </label>
 
-      <label title="Enter your phone number">
+      <label title="Mobile Phone">
         Mobile Phone*
         <input type="tel" name="phone" required autocomplete="tel">
       </label>
 
-      <label title="Business name">
+      <label title="Organization Name">
         Business/Organization Name*
         <input type="text" name="business" required autocomplete="organization">
       </label>
@@ -94,7 +108,7 @@
         </select>
       </label>
 
-      <label title="Describe your business">
+      <label title="Organization Description">
         Business Description
         <textarea name="description"></textarea>
       </label>

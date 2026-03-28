@@ -1,5 +1,7 @@
 // timestamp
 document.getElementById("timestamp").value = new Date().toISOString();
+
+
 // SET CURRENT DATE AND LAST MODIFICATION
 const yearSpan = document.getElementById("currentyear");
 const lastModified = document.getElementById("lastModified");
@@ -34,3 +36,20 @@ document.querySelectorAll(".close").forEach(btn => {
     btn.closest("dialog").close();
   });
 });
+
+
+//Thank you message
+ function getData() {
+      const params = new URLSearchParams(window.location.search);
+
+      document.getElementById("results").innerHTML = `
+        <p><strong>First Name:</strong> ${params.get("fname")}</p>
+        <p><strong>Last Name:</strong> ${params.get("lname")}</p>
+        <p><strong>Email:</strong> ${params.get("email")}</p>
+        <p><strong>Phone:</strong> ${params.get("phone")}</p>
+        <p><strong>Business:</strong> ${params.get("business")}</p>
+        <p><strong>Submitted:</strong> ${params.get("timestamp")}</p>
+      `;
+    }
+
+getData();

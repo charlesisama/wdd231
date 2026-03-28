@@ -3,26 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Thank You</title>
-  <script>
-    function getData() {
-      const params = new URLSearchParams(window.location.search);
-
-      document.getElementById("results").innerHTML = `
-        <p><strong>First Name:</strong> ${params.get("fname")}</p>
-        <p><strong>Last Name:</strong> ${params.get("lname")}</p>
-        <p><strong>Email:</strong> ${params.get("email")}</p>
-        <p><strong>Phone:</strong> ${params.get("phone")}</p>
-        <p><strong>Business:</strong> ${params.get("business")}</p>
-        <p><strong>Submitted:</strong> ${params.get("timestamp")}</p>
-      `;
-    }
-  </script>
+  <script src="scripts/join.js" defer></script>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
 </head>
 
-<body onload="getData()">
-  <h1>Thank You!</h1>
-  <p>Your application has been received.</p>
+<body onload="getData()" id="thankyou">
+  <header>
+   <div class="brand">
+    <a href="index.html" class="brand-link">
+      <img src="images/logo.webp" alt="Chamber Logo" class="site-logo">
+      <div class="brand-text">
+        <span class="brand-name">Port Harcourt</span>
+        <span class="brand-subtitle">Chamber of Commerce</span>
+      </div>
+    </a>
+  </div>
 
-  <div id="results"></div>
+  </header>
+  <main>
+  <div class="thankyouMessage">
+    <h1>Thank You!</h1>
+    <p>Your application has been received.</p>
+
+    <div id="results"></div>
+  </div>
+  </main>
+
 </body>
 </html>

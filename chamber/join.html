@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
   <meta property="og:title" content="Port Harcourt Chamber Join page">
-  <meta property="og:description" content="Join the Port Harcourt Chamber">
+  <meta property="og:description" content="Join other businesses and member organization in the Port Harcourt Chamber of commerce">
   <meta property="og:image" content="https://charlesisama.github.io/wdd231/chamber/images/hero.webp">
   <meta property="og:url" content="https://charlesisama.github.io/wdd231/chamber/join.html">
 
@@ -63,38 +63,41 @@
     
     <form method="get" action="thankyou.html" class="join-form">
 
-      <label title="First Nmae">
+      <label for="FirstName" title="First Name">
         First Name*
-        <input type="text" name="fname" required autocomplete="given-name">
+        <input type="text" id="FirstName" name="FirstName" title="First Name" required autocomplete="given-name">
       </label>
 
-      <label title="Last Name">
+      <label for="LastName" title="Last Name">
         Last Name*
-        <input type="text" name="lname" required autocomplete="family-name">
+        <input type="text" id="LastName" name="LastName" title="Last Name" required autocomplete="family-name">
       </label>
 
-      <label title="Organization Title">
+      <label for="orgTitle" title="Organization Title">
         Organizational Title
-        <input type="text" name="orgtitle"
+        <input type="text" name="orgtitle" id="orgTitle"
           autocomplete="organization-title"
-          pattern="[A-Za-z\s\-]{7,}">
+          pattern="[A-Za-z\s\-]{7,}"
+          title="Organization Title"
+          >
       </label>
 
-      <label title="Email Address">
+      <label for="email" title="Email Address">
         Email*
-        <input type="email" name="email" required
+        <input type="email" id="email" name="email" required
           autocomplete="email"
-          placeholder="example@email.com">
+          placeholder="example@email.com"
+          title="Email Address">
       </label>
 
-      <label title="Mobile Phone">
+      <label for="mobilePhone" title="Mobile Phone">
         Mobile Phone*
-        <input type="tel" name="phone" required autocomplete="tel">
+        <input type="tel" id="mobilePhone" name="phone" title="Mobile Phone" required autocomplete="tel">
       </label>
 
       <label title="Organization Name">
         Business/Organization Name*
-        <input type="text" name="business" required autocomplete="organization">
+        <input type="text" name="business" title="Organization Name" required autocomplete="organization">
       </label>
 
       
@@ -110,7 +113,7 @@
 
       <label title="Organization Description">
         Business Description
-        <textarea name="description"></textarea>
+        <textarea name="description" title="Organization Description"></textarea>
       </label>
 
       

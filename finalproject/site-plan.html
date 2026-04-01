@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Plan | EcoBlend Hub - Charles Isama</title>
+<meta name="description" content="WDD 231 Final Project Site Plan - EcoBlend Hub">
+<meta name="author" content="Charles Isama">
+
+<link rel="stylesheet" href="styles/site-plan.css">
+<link rel="stylesheet" href="styles/siteplan-large.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <span class="brand-mark">♻️</span>
+      <div>
+        <h1>EcoBlend Hub</h1>
+        <p class="subtitle">WDD 231 - Week 5 Site Plan</p>
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <a href="#name">Name</a>
+      <a href="#purpose">Purpose</a>
+      <a href="#scenarios">Scenarios</a>
+      <a href="#sitemap">Site Map</a>
+      <a href="#branding">Branding</a>
+      <a href="#wireframes">Wireframes</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="card" id="name">
+  <h2>Site Name</h2>
+  <p><strong>EcoBlend Hub</strong></p>
+  <p>
+    The name "EcoBlend Hub" combines environmental sustainability (Eco) with material blending concepts (Blend),
+    reflecting the focus on polymer materials and sustainable engineering. The word "Hub" emphasizes a central
+    platform for learning, interaction, and decision-making.
+  </p>
+</section>
+
+<section class="card" id="purpose">
+  <h2>Site Purpose</h2>
+  <p>
+    EcoBlend Hub is an educational and interactive website designed to help users understand different materials,
+    especially plastics and polymer blends, and their environmental impact. The site will provide material
+    information, sustainability insights, and interactive tools such as material comparison and environmental
+    impact estimation.
+  </p>
+</section>
+
+<section class="card" id="scenarios">
+  <h2>Scenarios</h2>
+  <ul>
+    <li>Which material is the most environmentally friendly for packaging applications?</li>
+    <li>How can I compare plastics and biodegradable materials based on sustainability?</li>
+  </ul>
+</section>
+
+<section class="card" id="sitemap">
+  <h2>Site Map</h2>
+  <div class="sitemap">
+    <div class="node root">Home</div>
+    <div class="branches">
+      <div class="node">Materials Guide</div>
+      <div class="node">Sustainability Tools</div>
+      <div class="node">Attributions</div>
+    </div>
+  </div>
+  <p class="note">
+    The website will use consistent navigation across all pages. The Materials page will include filtering
+    and dynamic rendering using JavaScript, while the Tools page will include interactive comparison features.
+  </p>
+</section>
+
+<section class="card" id="branding">
+  <h2>Color Scheme</h2>
+  <p>Eco-friendly palette inspired by sustainability and clean UI design.</p>
+
+  <div class="colors">
+
+    <div class="color">
+      <div class="chip primary"></div>
+      <div>
+        <p class="color-title">Primary</p>
+        <p class="color-meta">Green — #008753 (Buttons, highlights)</p>
+      </div>
+    </div>
+
+    <div class="color">
+      <div class="chip secondary"></div>
+      <div>
+        <p class="color-title">Secondary</p>
+        <p class="color-meta">Dark Green — #0B3D2E (Header, footer, headings)</p>
+      </div>
+    </div>
+
+    <div class="color">
+      <div class="chip accent"></div>
+      <div>
+        <p class="color-title">Accent</p>
+        <p class="color-meta">Gold — #F2C14E (Highlights, alerts)</p>
+      </div>
+    </div>
+
+    <div class="color">
+      <div class="chip muted-bg"></div>
+      <div>
+        <p class="color-title">Background</p>
+        <p class="color-meta">Light Gray — #F3F4F6 (Page background)</p>
+      </div>
+    </div>
+
+    <div class="color">
+      <div class="chip text"></div>
+      <div>
+        <p class="color-title">Text</p>
+        <p class="color-meta">Charcoal — #1F2937 (Body text)</p>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Typography</h2>
+  <div class="type-grid">
+
+    <div class="type-sample">
+      <h3 class="font-heading">Headings: Poppins</h3>
+      <p class="type-example font-heading">
+        EcoBlend Hub — Sustainable Materials Made Simple.
+      </p>
+    </div>
+
+    <div class="type-sample">
+      <h3 class="font-body">Body: Inter</h3>
+      <p class="type-example font-body">
+        Inter ensures readability for paragraphs, UI text, and data-driven content.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="card" id="wireframes">
+  <h2>Wireframes</h2>
+  <p class="note">
+    The diagrams below represent the Home page layout for mobile and desktop views.
+  </p>
+
+  <div class="wireframe-grid">
+
+    <article class="wireframe">
+      <header class="wireframe-head">
+        <h3>Mobile View</h3>
+        <p>Single column layout</p>
+      </header>
+
+      <div class="wf-box">
+        <div class="wf-row">
+          <div class="wf-block wf-logo">LOGO</div>
+          <div class="wf-block wf-menu">☰</div>
+        </div>
+        <div class="wf-hero">HERO</div>
+        <div class="wf-text">Intro Text</div>
+        <div class="wf-btn">CTA</div>
+
+        <div class="wf-section-title">Materials</div>
+        <div class="wf-cards one">
+          <div class="wf-card">Plastic</div>
+          <div class="wf-card">Biopolymer</div>
+          <div class="wf-card">Glass/Metal</div>
+        </div>
+
+        <div class="wf-footer">FOOTER</div>
+      </div>
+    </article>
+
+    <article class="wireframe">
+      <header class="wireframe-head">
+        <h3>Desktop View</h3>
+        <p>Grid layout</p>
+      </header>
+
+      <div class="wf-box">
+        <div class="wf-row wide">
+          <div class="wf-block wf-logo">LOGO</div>
+          <div class="wf-block wf-nav">NAV</div>
+        </div>
+
+        <div class="wf-hero-split">
+          <div class="wf-hero">IMAGE</div>
+          <div class="wf-side">
+            <div class="wf-text">Intro</div>
+            <div class="wf-btn">CTA</div>
+          </div>
+        </div>
+
+        <div class="wf-section-title">Materials</div>
+        <div class="wf-cards three">
+          <div class="wf-card">Card</div>
+          <div class="wf-card">Card</div>
+          <div class="wf-card">Card</div>
+        </div>
+
+        <div class="wf-footer">FOOTER</div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 EcoBlend Hub — Site Plan | Charles Isama</p>
+  </div>
+</footer>
+
+</body>
+</html>

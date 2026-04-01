@@ -88,6 +88,8 @@ header h1 {
 
 .navigation.open {
   display: flex;
+  visibility: visible;
+  height: auto;
 }
 
 .navigation a {

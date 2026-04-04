@@ -15,16 +15,15 @@ places.forEach((place, index) => {
     </figure>
     <address>${place.address}</address>
     <p>${place.description}</p>
-    <button>Learn More</button>
+    <button data-modal="${place.name[3]}modal">Learn More</button>
   `;
 
   container.appendChild(card);
 });
 
 
-// =======================
 // VISIT MESSAGE LOGIC
-// =======================
+
 const visitBox = document.querySelector("#visit-message");
 
 const lastVisit = localStorage.getItem("lastVisit");
@@ -50,3 +49,19 @@ visitBox.textContent = message;
 
 // store new visit
 localStorage.setItem("lastVisit", now);
+
+
+
+// modals
+document.querySelector(button).forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    document.getElementById(link.dataset.modal).showModal();
+  });
+});
+
+document.querySelectorAll(".close").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.closest("dialog").close();
+  });
+});

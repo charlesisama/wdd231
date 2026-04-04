@@ -15,7 +15,7 @@ places.forEach((place, index) => {
     </figure>
     <address>${place.address}</address>
     <p>${place.description}</p>
-    <button data-modal="${place.name[3]}modal">Learn More</button>
+    <button class="${place.name[3]}modal" id="open">Learn More</button>
   `;
 
   container.appendChild(card);
@@ -53,7 +53,7 @@ localStorage.setItem("lastVisit", now);
 
 
 // modals
-document.querySelector(button).forEach(link => {
+document.querySelector("#open").forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
     document.getElementById(link.dataset.modal).showModal();

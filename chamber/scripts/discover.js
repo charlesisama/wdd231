@@ -15,7 +15,7 @@ places.forEach((place, index) => {
     </figure>
     <address>${place.address}</address>
     <p>${place.description}</p>
-    <button class="${place.name[3]}modal" id="open">Learn More</button>
+   <button class="open-btn" data-modal="${place.modal}">Learn More</button>
   `;
 
   container.appendChild(card);
@@ -53,10 +53,10 @@ localStorage.setItem("lastVisit", now);
 
 
 // modals
-document.querySelector("#open").forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    document.getElementById(link.dataset.modal).showModal();
+document.querySelectorAll(".open-btn").forEach(link => {
+  link.addEventListener("click", () => {
+    const modal = document.getElementById(link.dataset.modal);
+    modal.showModal();
   });
 });
 

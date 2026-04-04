@@ -3,48 +3,56 @@ export const places = [
     name: "Pleasure Park",
     address: "Aba Road, Port Harcourt",
     description: "A recreational park with games, rides, and relaxation spots.",
-    image: "pleasurepark.webp"
+    image: "pleasurepark.webp",
+    modal: "pparkModal"
   },
   {
     name: "Port Harcourt Mall",
     address: "Azikiwe Road",
     description: "A modern shopping mall with cinemas and restaurants.",
-    image: "mall.webp"
+    image: "mall.webp",
+    modal : "mallModal"
   },
   {
     name: "Isaac Boro Park",
     address: "Old GRA",
     description: "A historic park named after a Niger Delta hero.",
-    image: "boro.webp"
+    image: "boro.webp",
+    modal : "boroModal"
   },
   {
     name: "Rivers State Museum",
     address: "King Jaja Street",
     description: "Displays cultural artifacts and local history.",
-    image: "museum.webp"
+    image: "museum.webp",
+    modal : "museumModal"
   },
   {
     name: "Trans Amadi Industrial Area",
     address: "Trans Amadi",
     description: "The industrial hub of Port Harcourt.",
-    image: "transamadi.webp"
+    image: "transamadi.webp",
+    modal : "transModal"
   },
   {
     name: "Bonny Island",
     address: "Bonny LGA",
     description: "A major oil and gas hub with coastal beauty.",
-    image: "bonny.webp"
+    image: "bonny.webp",
+    modal : "bonnyModal"
   },
   {
     name: "University of Port Harcourt",
     address: "East-West Road",
     description: "One of Nigeria’s leading universities.",
-    image: "uniport.webp"
+    image: "uniport.webp",
+    modal : "uniportModal"
   },
   {
     name: "Eleme Petrochemical",
     address: "Eleme",
     description: "A key industrial facility in Nigeria’s energy sector.",
-    image: "eleme.webp"
+    image: "eleme.webp",
+    modal : "elemeModal"
   }
 ];

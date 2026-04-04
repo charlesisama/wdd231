@@ -725,3 +725,33 @@ dialog .close:hover {
   padding: 1rem;
   background-color: var(--accent-color);
 }
+
+
+.visit-box {
+  background: var(--accent-color);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1rem;
+}
+
+.discover-card {
+  background: var(--card-color);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}

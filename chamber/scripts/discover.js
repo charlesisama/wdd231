@@ -6,16 +6,22 @@ const container = document.querySelector("#discover-container");
 places.forEach((place, index) => {
   const card = document.createElement("div");
   card.classList.add("discover-card");
-  card.style.gridArea = `card${index + 1}`;
+
+  const isAboveFold = index < 2; 
 
   card.innerHTML = `
     <h2>${place.name}</h2>
     <figure>
-      <img src="images/${place.image}" alt="${place.name}" loading="lazy">
+      <img src="images/${place.image}" 
+           alt="${place.name}" 
+           loading="${isAboveFold ? 'eager' : 'lazy'}"
+          fetchpriority="${isAboveFold ? 'high' : 'auto'}"
+           width="400"
+           height="250">
     </figure>
     <address>${place.address}</address>
     <p>${place.description}</p>
-   <button class="open-btn" data-modal="${place.modal}">Learn More</button>
+    <button class="open-btn" data-modal="${place.modal}">Learn More</button>
   `;
 
   container.appendChild(card);

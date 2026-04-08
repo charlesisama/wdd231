@@ -755,3 +755,18 @@ dialog .close:hover {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+
+.discover-card img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }

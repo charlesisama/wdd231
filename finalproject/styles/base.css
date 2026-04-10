@@ -346,3 +346,140 @@ footer p {
   opacity: 0.85;
   font-size: 0.95rem;
 }
+
+
+/* modal section */
+ .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(11, 61, 46, 0.85);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s ease;
+    }
+    .modal-content {
+      background: white;
+      max-width: 620px;
+      width: 92%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-hover);
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    #closeModal {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--secondary);
+    }
+    .modal-body h2 { color: var(--secondary); margin-bottom: 1rem; }
+
+/* materials */
+
+.loading-text {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-size: 1.3rem;
+  color: var(--secondary);
+}
+
+.error-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #e63939;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+.hero-short {
+  height: 380px;
+}
+
+.hero-text-short {
+  max-width: 680px;
+}
+
+/* Filter Bar */
+.filter-bar {
+  padding: 2rem 1.25rem;
+  background: var(--muted);
+  border-radius: var(--radius);
+  margin: 0 1.25rem;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 260px;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 2px solid #ddd;
+  font-size: 1.1rem;
+}
+
+.category-select {
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 2px solid #ddd;
+  font-size: 1.1rem;
+}
+
+.clear-btn {
+  padding: 1rem 1.8rem;
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.clear-btn:hover {
+  background: #006c42;
+}
+
+.results-wrapper {
+  margin-left: auto;
+}
+
+.results-count {
+  background: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  box-shadow: var(--shadow);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Materials Grid */
+.materials-grid {
+  padding-top: 1rem;
+  min-height: 400px;
+}

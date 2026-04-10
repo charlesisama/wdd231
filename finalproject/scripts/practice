@@ -1,8 +1,6 @@
-import { initNav } from "./nav.mjs";
-import { openModal, initModal } from "./modal.mjs";
-
-initNav();
-initModal("toolModal");
+// =============================================
+// EcoBlend Hub - Tools Module
+// =============================================
 
 const toolsData = [
     {
@@ -99,41 +97,78 @@ const toolsData = [
     }
 ];
 
-// RENDER
+// Render all tool cards
 function renderTools() {
-  const grid = document.getElementById("toolsGrid");
-  if (!grid) return;
+    const grid = document.getElementById('toolsGrid');
+    if (!grid) return;
 
-  grid.innerHTML = toolsData.map(tool => `
-    <div class="tool-card">
-      <img src="${tool.image}" alt="${tool.title}">
-      <div class="tool-info">
-        <span class="tool-type">${tool.type}</span>
-        <h3>${tool.title}</h3>
-        <p>${tool.description}</p>
-
-        <div class="tool-meta">
-          <span>${tool.difficulty}</span>
-          <span>${tool.time}</span>
+    grid.innerHTML = toolsData.map(tool => `
+        <div class="tool-card" data-id="${tool.id}">
+            <img src="${tool.image}" alt="${tool.title}" loading="lazy">
+            <div class="tool-info">
+                <span class="tool-type">${tool.type}</span>
+                <h3>${tool.title}</h3>
+                <p>${tool.description}</p>
+                
+                <div class="tool-meta">
+                    <span>${tool.difficulty}</span>
+                    <span>${tool.time}</span>
+                </div>
+                
+                <button class="btn-tool" data-id="${tool.id}">
+                    Use Tool
+                </button>
+            </div>
         </div>
-
-        <button class="btn-tool" data-id="${tool.id}">
-          Use Tool
-        </button>
-      </div>
-    </div>
-  `).join("");
+    `).join('');
 }
 
-// EVENTS
-document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("btn-tool")) {
-    const id = parseInt(e.target.dataset.id);
-    const tool = toolsData.find(t => t.id === id);
+// Open tool in modal
+function openToolModal(toolId) {
+    const tool = toolsData.find(t => t.id === parseInt(toolId));
+    if (!tool) return;
 
-    openModal(tool.content, "toolModal");
-  }
-});
+    const modalBody = document.getElementById('modalBody');
+    modalBody.innerHTML = tool.content;
 
-// INIT
-document.addEventListener("DOMContentLoaded", renderTools);
+    const modal = document.getElementById('toolModal');
+    modal.style.display = 'flex';
+}
+
+// Event listeners
+function initTools() {
+    renderTools();
+
+    // Button clicks for opening tools
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('btn-tool')) {
+            const id = e.target.getAttribute('data-id');
+            openToolModal(id);
+        }
+    });
+
+    // Close modal (works with your modal.js)
+    const closeBtn = document.getElementById('closeModal');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            const modal = document.getElementById('toolModal');
+            modal.style.display = 'none';
+        });
+    }
+
+    // Close modal when clicking outside content
+    const toolModal = document.getElementById('toolModal');
+    if (toolModal) {
+        toolModal.addEventListener('click', (e) => {
+            if (e.target === toolModal) {
+                toolModal.style.display = 'none';
+            }
+        });
+    }
+}
+
+// Initialize when script loads
+document.addEventListener('DOMContentLoaded', initTools);
+
+// Export for use in main.js if needed
+export { initTools, renderTools };

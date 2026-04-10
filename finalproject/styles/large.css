@@ -1,0 +1,70 @@
+/* ============================================= */
+/* LARGE.CSS - Desktop Enhancements             */
+/* ============================================= */
+
+@media (min-width: 768px) {
+
+  /* Header becomes horizontal nav */
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: block !important;
+    position: static;
+    width: auto;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0;
+  }
+
+  .navigation li {
+    border-bottom: none;
+  }
+
+  .navigation a {
+    padding: 0.5rem 0;
+  }
+
+  /* Hero */
+  .hero-text {
+    left: 10%;
+    max-width: 620px;
+  }
+
+  .hero-text h1 {
+    font-size: 3.4rem;
+  }
+
+  /* Grid improvements */
+  .home-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
+
+  .tools {
+    margin: 3rem auto;
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding: 5rem 1.25rem;
+  }
+
+  .hero {
+    height: 580px;
+  }
+}

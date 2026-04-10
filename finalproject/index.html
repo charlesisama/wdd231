@@ -1,183 +1,126 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>EcoBlend Hub | Sustainable Materials Made Simple</title>
   <meta name="description" content="Explore sustainable materials, compare environmental impact, and make smarter engineering decisions with EcoBlend Hub.">
   <meta name="author" content="Charles Isama">
 
-  <!-- Open Graph -->
-
-  <meta property="og:title" content="EcoBlend Hub Home Page">
+ 
+  <meta property="og:title" content="EcoBlend Hub - Sustainable Materials">
   <meta property="og:description" content="Learn, compare, and choose sustainable materials.">
   <meta property="og:image" content="images/hero.webp">
-  <meta property="og:url" content="#">
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/final/">
 
-  <!-- Favicon -->
-
+  
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
 
-  <!-- CSS -->
-
+ 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/large.css">
 
-  <!-- Fonts -->
-
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- JS -->
-
   <script type="module" src="js/main.js" defer></script>
-
 </head>
 
 <body>
+  <header>
+    <div class="header-container">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <img src="images/logo.webp" alt="EcoBlend Hub logo" class="site-logo" width="45" height="45">
+          <div class="brand-text">
+            <span class="brand-name">EcoBlend</span>
+            <span class="brand-subtitle">Hub</span>
+          </div>
+        </a>
+      </div>
 
-<!-- ================= HEADER ================= -->
+      <button id="menu" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
 
-<header>
-  <div class="header-container">
-
-```
-<div class="brand">
-  <a href="index.html" class="brand-link">
-    <img src="images/logo.webp" alt="EcoBlend Hub logo" class="site-logo" width="120" height="120">
-    <div class="brand-text">
-      <span class="brand-name">EcoBlend</span>
-      <span class="brand-subtitle">Hub</span>
+      <nav id="nav-menu">
+        <ul class="navigation">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="tools.html">Tools</a></li>
+        </ul>
+      </nav>
     </div>
-  </a>
-</div>
+  </header>
 
-<button id="menu" aria-label="Open navigation menu">☰</button>
+  <main>
+   
+    <section class="hero">
+      <img src="images/hero.webp" alt="Sustainable materials concept - recycling and green engineering" loading="lazy">
+      <div class="hero-text">
+        <h1>Smarter Material Choices for a Sustainable Future</h1>
+        <p>Understand materials, compare environmental impact, and make better engineering decisions.</p>
+        <a href="materials.html" class="hero-btn">Explore Materials →</a>
+      </div>
+    </section>
 
-<nav>
-  <ul class="navigation">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="materials.html">Materials</a></li>
-    <li><a href="tools.html">Tools</a></li>
-  </ul>
-</nav>
-```
 
-  </div>
-</header>
+    <section class="intro">
+      <h2>Why Material Choice Matters</h2>
+      <p>Every material has an environmental footprint. From plastics to biodegradable polymers, understanding their lifecycle helps reduce waste and improve sustainability.</p>
+    </section>
 
-<!-- ================= MAIN ================= -->
+  
+    <section class="home-grid">
+      <div class="card">
+        <h2>Plastics</h2>
+        <p>Widely used materials with significant environmental considerations.</p>
+      </div>
+      <div class="card">
+        <h2>Biopolymers</h2>
+        <p>Eco-friendly alternatives gaining traction in sustainable design.</p>
+      </div>
+      <div class="card">
+        <h2>Glass & Metals</h2>
+        <p>Highly recyclable materials with long lifecycle benefits.</p>
+      </div>
+    </section>
 
-<main>
 
-  <!-- HERO -->
+    <section class="tools">
+      <h2>Sustainability Tools</h2>
+      <p>Use interactive tools to compare materials and estimate environmental impact.</p>
+      <a href="tools.html" class="hero-btn">Try Tools Now →</a>
+    </section>
+  </main>
 
-  <section class="hero">
-    <img src="images/hero.webp" alt="Sustainable materials concept" loading="lazy">
 
-```
-<div class="hero-text">
-  <h1>Smarter Material Choices for a Sustainable Future</h1>
-  <p>
-    Understand materials, compare environmental impact, and make better engineering decisions.
-  </p>
-  <a href="materials.html" class="hero-btn">Explore Materials</a>
-</div>
-```
+  <footer>
+    <div class="footer-grid">
+      
+      <div>
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:charlesisama@gmail.com">charlesisama@gmail.com</a></p>
+      </div>
 
-  </section>
+      <!-- SOCIAL -->
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+        <a href="#" aria-label="GitHub"><img src="images/github.svg" alt="GitHub" width="32" height="32"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="32" height="32"></a>
+      </div>
 
-  <!-- INTRO -->
+      <div>
+        <a href="attributions.html">Attributions</a><br>
+        <a href="https://youtu.be/YOUR_VIDEO_LINK" target="_blank">Project Demo Video</a>
+      </div>
+    </div>
 
-  <section class="intro">
-    <h2>Why Material Choice Matters</h2>
-    <p>
-      Every material has an environmental footprint. From plastics to biodegradable polymers,
-      understanding their lifecycle helps reduce waste and improve sustainability.
-    </p>
-  </section>
-
-  <!-- MATERIAL PREVIEW -->
-
-  <section class="home-grid">
-
-```
-<div class="card">
-  <h2>Plastics</h2>
-  <p>Widely used materials with significant environmental considerations.</p>
-</div>
-
-<div class="card">
-  <h2>Biopolymers</h2>
-  <p>Eco-friendly alternatives gaining traction in sustainable design.</p>
-</div>
-
-<div class="card">
-  <h2>Glass & Metals</h2>
-  <p>Highly recyclable materials with long lifecycle benefits.</p>
-</div>
-```
-
-  </section>
-
-  <!-- TOOLS -->
-
-  <section class="tools">
-    <h2>Sustainability Tools</h2>
-    <p>
-      Use interactive tools to compare materials and estimate environmental impact.
-    </p>
-    <a href="tools.html" class="hero-btn">Try Tools</a>
-  </section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-  <div class="footer-grid">
-
-```
-<!-- CONTACT -->
-<div>
-  <h3>Contact Us</h3>
-  <p>Email: info@ecoblendhub.com</p>
-</div>
-
-<!-- SOCIAL -->
-<div class="social-links">
-  <a href="#" aria-label="LinkedIn">
-    <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
-  </a>
-  <a href="#" aria-label="GitHub">
-    <img src="images/github.svg" alt="GitHub" width="40" height="40">
-  </a>
-  <a href="#" aria-label="Instagram">
-    <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
-  </a>
-</div>
-
-<!-- LINKS -->
-<div>
-  <a href="attributions.html">Attributions</a><br>
-  <a href="#">Project Video</a>
-</div>
-```
-
-  </div>
-
-  <p>© <span id="year"></span> ✨ Charles Isama - WDD231 ✨ Nigeria</p>
-  <p id="lastModified"></p>
-
-</footer>
-
+    <p>© <span id="year"></span> ✨ Charles Isama - WDD231 ✨ Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

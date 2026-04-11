@@ -16,6 +16,9 @@ async function loadMaterials() {
     const res = await fetch("data/materials.json");
     allMaterials = await res.json();
     renderMaterials(allMaterials);
+
+    initFilters();
+
   } catch {
     grid.innerHTML = `<p class="error-message">Failed to load data.</p>`;
   }
@@ -71,4 +74,40 @@ document.addEventListener("click", (e) => {
   }
 });
 
+//filter function
+function initFilters() {
+  const searchInput = document.getElementById("searchInput");
+  const categoryFilter = document.getElementById("categoryFilter");
+  const clearBtn = document.getElementById("clearFilters");
+
+  if (!searchInput || !categoryFilter || !clearBtn) return;
+
+  function filterMaterials() {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    const selectedCategory = categoryFilter.value;
+
+    const filtered = allMaterials.filter(m => {
+      const matchesSearch =
+        m.name.toLowerCase().includes(searchTerm) ||
+        m.fullName.toLowerCase().includes(searchTerm);
+
+      const matchesCategory =
+        !selectedCategory || m.category === selectedCategory;
+
+      return matchesSearch && matchesCategory;
+    });
+
+    renderMaterials(filtered);
+  }
+
+  // EVENTS
+  searchInput.addEventListener("input", filterMaterials);
+  categoryFilter.addEventListener("change", filterMaterials);
+
+  clearBtn.addEventListener("click", () => {
+    searchInput.value = "";
+    categoryFilter.value = "";
+    renderMaterials(allMaterials);
+  });
+}
 document.addEventListener("DOMContentLoaded", loadMaterials);

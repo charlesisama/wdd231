@@ -5,7 +5,7 @@ const messageBox = document.getElementById("confirmationMessage");
 
 if (form) {
   form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    
 
     const data = {
       name: document.getElementById("name").value.trim(),

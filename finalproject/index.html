@@ -59,7 +59,12 @@
   <main>
    
     <section class="hero">
-      <img src="images/hero.webp" alt="Sustainable materials concept - recycling and green engineering" loading="lazy" >
+      
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+        <img src="images/hero-small.webp" alt="Sustainable materials concept - recycling and green engineering" loading="lazy">
+      </picture>
       <div class="hero-text">
         <h1>Smarter Material Choices for a Sustainable Future</h1>
         <p>Understand materials, compare environmental impact, and make better engineering decisions.</p>
@@ -98,29 +103,27 @@
   </main>
 
 
-  <footer>
+ <footer>
     <div class="footer-grid">
-      
       <div>
         <h3>Contact Us</h3>
         <p>Email: <a href="mailto:charlesisama@gmail.com">charlesisama@gmail.com</a></p>
+        <p>📞 Phone: +2348052329609</p>
+      
+        <div class="social-links">
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="38" height="38"></a>
+          <a href="https://github.com/charlesisama" aria-label="GitHub"><img src="images/github.svg" alt="GitHub" width="38" height="38"></a>
+          <a href="https://www.instagram.com/charlesisama" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="38" height="38"></a>
+        </div>
       </div>
-
-      <!-- SOCIAL -->
-      <div class="social-links">
-        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
-        <a href="#" aria-label="GitHub"><img src="images/github.svg" alt="GitHub" width="32" height="32"></a>
-        <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="32" height="32"></a>
-      </div>
-
       <div>
         <a href="attributions.html">Attributions</a><br>
         <a href="https://youtu.be/YOUR_VIDEO_LINK" target="_blank">Project Demo Video</a>
       </div>
     </div>
-
     <p>© <span id="year"></span> ✨ Charles Isama - WDD231 ✨ Nigeria</p>
     <p id="lastModified"></p>
   </footer>
+
 </body>
 </html>

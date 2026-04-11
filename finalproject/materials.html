@@ -60,7 +60,11 @@
   <main>
     <!-- HERO (shorter version) -->
     <section class="hero hero-short">
-      <img src="images/hero.webp" alt="Materials engineering and sustainability" loading="lazy">
+      <picture>
+        <source srcset="images/mhero-large.webp" media="(min-width: 1012px)">
+        <source srcset="images/mhero-medium.webp" media="(min-width: 600px)">
+        <img src="images/mhero-small.webp" alt="Materials engineering and sustainability" loading="lazy">
+      </picture>
       <div class="hero-text hero-text-short">
         <h1>Materials Guide</h1>
         <p>18 real-world materials • Environmental data • Compare & choose responsibly</p>
@@ -104,16 +108,18 @@
   </div>
 
   <!-- FOOTER -->
-  <footer>
+ <footer>
     <div class="footer-grid">
       <div>
         <h3>Contact Us</h3>
         <p>Email: <a href="mailto:charlesisama@gmail.com">charlesisama@gmail.com</a></p>
-      </div>
-      <div class="social-links">
-        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="38" height="38"></a>
-        <a href="#" aria-label="GitHub"><img src="images/github.svg" alt="GitHub" width="38" height="38"></a>
-        <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="38" height="38"></a>
+        <p>📞 Phone: +2348052329609</p>
+      
+        <div class="social-links">
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="38" height="38"></a>
+          <a href="https://github.com/charlesisama" aria-label="GitHub"><img src="images/github.svg" alt="GitHub" width="38" height="38"></a>
+          <a href="https://www.instagram.com/charlesisama" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="38" height="38"></a>
+        </div>
       </div>
       <div>
         <a href="attributions.html">Attributions</a><br>
@@ -123,5 +129,6 @@
     <p>© <span id="year"></span> ✨ Charles Isama - WDD231 ✨ Nigeria</p>
     <p id="lastModified"></p>
   </footer>
+
 </body>
 </html>

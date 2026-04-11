@@ -58,18 +58,23 @@
   </header>
 
   <main>
-    <!-- HERO (short version) -->
+    
     <section class="hero hero-short">
-      <img src="images/hero.webp" alt="Sustainability tools and calculators" loading="lazy">
+      
+       <picture>
+        <source srcset="images/thero-large.webp" media="(min-width: 1012px)">
+        <source srcset="images/thero-medium.webp" media="(min-width: 600px)">
+        <img src="images/thero-small.webp" alt="Sustainability tools and calculators" loading="lazy">
+      </picture>
       <div class="hero-text hero-text-short">
         <h1>Tools &amp; Calculators</h1>
         <p>Practical tools to measure, reduce, and track your environmental impact</p>
       </div>
     </section>
 
-    <!-- TOOLS GRID -->
+   
     <section id="toolsGrid" class="home-grid tools-grid">
-      <!-- Tool cards will be injected by JavaScript -->
+   
     </section>
   </main>
 
@@ -81,17 +86,19 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
+ 
   <footer>
     <div class="footer-grid">
       <div>
         <h3>Contact Us</h3>
         <p>Email: <a href="mailto:charlesisama@gmail.com">charlesisama@gmail.com</a></p>
-      </div>
-      <div class="social-links">
-        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="38" height="38"></a>
-        <a href="#" aria-label="GitHub"><img src="images/github.svg" alt="GitHub" width="38" height="38"></a>
-        <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="38" height="38"></a>
+        <p>📞 Phone: +2348052329609</p>
+      
+        <div class="social-links">
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="38" height="38"></a>
+          <a href="https://github.com/charlesisama" aria-label="GitHub"><img src="images/github.svg" alt="GitHub" width="38" height="38"></a>
+          <a href="https://www.instagram.com/charlesisama" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="38" height="38"></a>
+        </div>
       </div>
       <div>
         <a href="attributions.html">Attributions</a><br>
@@ -102,7 +109,6 @@
     <p id="lastModified"></p>
   </footer>
 
-  <!-- Main script -->
-  <script type="module" src="scripts/main.js" defer></script>
+
 </body>
 </html>

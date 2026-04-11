@@ -314,7 +314,8 @@ footer {
 .footer-grid {
   max-width: var(--max);
   margin: 0 auto;
-  display: grid;
+  display: flex;
+  justify-content: center;
   gap: 2.5rem;
   margin-bottom: 2rem;
 }

@@ -1,8 +1,8 @@
-import { initNav } from "./nav.mjs";
+
 import { openModal, initModal } from "./modal.mjs";
 import { addFavorite } from "./storage.mjs";
 
-initNav();
+
 initModal();
 
 let allMaterials = [];
@@ -45,7 +45,7 @@ function renderMaterials(materials) {
     `${materials.length} materials`;
 }
 
-// EVENTS (delegation)
+
 document.addEventListener("click", (e) => {
 
   // OPEN MODAL
@@ -60,7 +60,7 @@ document.addEventListener("click", (e) => {
     `);
   }
 
-  // FAVORITES
+  // fav button
   if (e.target.classList.contains("favorite-btn")) {
     e.stopPropagation();
 

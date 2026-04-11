@@ -1,7 +1,7 @@
-import { initNav } from "./nav.mjs";
+
 import { openModal, initModal } from "./modal.mjs";
 
-initNav();
+
 initModal("toolModal");
 
 const toolsData = [

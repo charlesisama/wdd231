@@ -1,6 +1,4 @@
-/* ============================================= */
-/* LARGE.CSS - Desktop Enhancements             */
-/* ============================================= */
+
 
 @media (min-width: 768px) {
 
@@ -67,6 +65,15 @@
     .tool-card img {
         height: 210px;
     }
+
+    .hero-short {
+        height: 460px;
+    }
+
+    .hero{
+      height: 480px;
+    }
+    
 }
 
 @media (min-width: 1024px) {
@@ -90,6 +97,13 @@
     .tool-card img {
         height: 220px;
     }
+    .hero{
+      height: 520px;
+    }
+
+    .hero-short {
+        height: 480px;
+    }
 }
 
 
@@ -97,15 +111,11 @@
     .tools-grid {
         gap: 2.5rem;
     }
-}
-
-/* Small adjustments for hero on tools page */
-.hero-short {
+    .hero-short {
     height: 360px;
 }
-
-@media (min-width: 768px) {
-    .hero-short {
-        height: 400px;
-    }
 }
+
+
+
+

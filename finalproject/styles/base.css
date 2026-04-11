@@ -604,3 +604,131 @@ footer p {
     margin-bottom: 0.6rem;
     line-height: 1.55;
 }
+
+/* attributions page */
+.attribution-list {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.form-response {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.response-box {
+  background: var(--muted);
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin: 2rem 0;
+  text-align: left;
+}
+
+
+
+
+/* CONTACT page*/
+
+.contact-wrapper {
+  max-width: var(--max);
+  margin: 3rem auto;
+  display: grid;
+  gap: 2.5rem;
+  padding: 0 1.25rem;
+}
+
+/* LEFT SIDE */
+.contact-info {
+  background: linear-gradient(135deg, #0b3d2e, #008753);
+  color: white;
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-info h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  margin-bottom: 1.2rem;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.info-item span {
+  font-size: 1.1rem;
+}
+
+/* RIGHT SIDE (FORM CARD) */
+.contact-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* FORM LAYOUT */
+.form-row {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 135, 83, 0.15);
+}
+
+/* BUTTON */
+.submit-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background: #006c42;
+  transform: translateY(-2px);
+}
+
+
+.confirmation {
+  margin-top: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+

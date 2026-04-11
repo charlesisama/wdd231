@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EcoBlend Hub | Submission Received</title>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="images/logo.webp" alt="EcoBlend logo" width="45">
+        <span>EcoBlend Hub</span>
+      </a>
+
+      <button id="menu">☰</button>
+
+      <nav id="nav-menu">
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="tools.html">Tools</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="form-response">
+      <h1>✅ Submission Received</h1>
+      <p>Thank you for reaching out. Your message has been successfully submitted.</p>
+
+      <div class="response-box">
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Message:</strong> <span id="message"></span></p>
+      </div>
+
+      <a href="index.html" class="hero-btn">Return Home</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Charles Isama</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

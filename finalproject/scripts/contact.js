@@ -17,6 +17,15 @@ if (form) {
     saveContactMessage(data);
 
     messageBox.textContent = "✅ Message sent successfully!";
-    form.reset();
+    
   });
+}
+
+ // form data display
+const params = new URLSearchParams(window.location.search);
+
+if (params.has("name")) {
+  document.getElementById("dname").textContent = params.get("name");
+  document.getElementById("demail").textContent = params.get("email");
+  document.getElementById("dmessage").textContent = params.get("message");
 }

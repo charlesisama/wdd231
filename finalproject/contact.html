@@ -48,8 +48,12 @@
 <main>
 
  
-  <section class="hero hero-short">
-    <img src="images/hero.webp" alt="Contact EcoBlend Hub">
+  <section class="hero">
+    <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+        <img src="images/hero-small.webp" alt="Contact EcoBlend Hub" loading="lazy">
+      </picture>
     <div class="hero-text hero-text-short">
       <h1>Contact Us</h1>
       <p>We’d love to hear from you</p>
@@ -80,7 +84,7 @@
 
   <!-- RIGHT: FORM -->
   <div class="contact-card">
-    <form id="contactForm" class="contact-form">
+    <form id="contactForm" class="contact-form" action="form-action.html" method="GET">
 
       <div class="form-row">
         <div class="form-item">

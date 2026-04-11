@@ -47,20 +47,16 @@ img {
   display: block;
 }
 
-/* ===== GLOBAL SECTION LAYOUT ===== */
+
 section {
   max-width: var(--max);
   margin: 0 auto;
   padding: 4rem 1.25rem;
 }
 
-@media (max-width: 480px) {
-  section {
-    padding: 3rem 1rem;
-  }
-}
 
-/* headerSection */
+
+
 header {
   position: sticky;
   top: 0;
@@ -346,6 +342,7 @@ footer a {
 
 footer a:hover {
   color: var(--accent);
+  text-decoration: underline;
 }
 
 /* Footer bottom text */
@@ -416,10 +413,6 @@ footer p {
   color: #555;
 }
 
-
-.hero-short {
-  height: 380px;
-}
 
 .hero-text-short {
   max-width: 680px;

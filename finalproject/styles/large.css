@@ -2,6 +2,12 @@
   section {
     padding: 3rem 1rem;
   }
+    .hero-text {
+    left: 5%;
+    right: 5%;
+    max-width: 100%;
+  }
+
 }
 
 @media (min-width: 768px) {

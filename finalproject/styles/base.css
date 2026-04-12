@@ -14,6 +14,10 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+* {
+  max-width: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -312,9 +316,15 @@ footer {
   max-width: var(--max);
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem;
   margin-bottom: 2rem;
+}
+
+.footer-grid > div {
+  min-width: 200px;
+  flex: 1 1 200px;
 }
 
 footer h3 {
@@ -444,7 +454,8 @@ footer p {
 
 .search-input {
   flex: 1;
-  min-width: 260px;
+  min-width: 0;
+  width: 100%;
   padding: 1rem;
   border-radius: var(--radius);
   border: 2px solid #ddd;

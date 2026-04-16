@@ -15,7 +15,7 @@ const toolsData = [
         difficulty: "Easy",
         time: "2 min",
         content: `
-            <h3>Carbon Footprint Estimator</h3>
+            <h2>Carbon Footprint Estimator</h2>
             <p>Answer a few quick questions to get your estimated yearly CO₂ emissions.</p>
             <div class="tool-detail">
                 <p><strong>Coming soon:</strong> Interactive calculator with results and reduction tips.</p>
@@ -36,7 +36,7 @@ const toolsData = [
         difficulty: "Easy",
         time: "3 min",
         content: `
-            <h3>Waste Impact Calculator</h3>
+            <h2>Waste Impact Calculator</h2>
             <p>Discover how much waste you generate and how it affects the planet.</p>
             <div class="tool-detail">
                 <p>Interactive tool coming soon with visualizations and personalized tips.</p>
@@ -52,7 +52,7 @@ const toolsData = [
         difficulty: "Medium",
         time: "Instant",
         content: `
-            <h3>Smart Recycling Guide</h3>
+            <h2>Smart Recycling Guide</h2>
             <p>Search or scan items to know how to dispose of them responsibly.</p>
             <div class="tool-detail">
                 <p>Local recycling database + material identification helper.</p>
@@ -68,7 +68,7 @@ const toolsData = [
         difficulty: "Easy",
         time: "2 min",
         content: `
-            <h3>Energy & Water Savings Estimator</h3>
+            <h2>Energy & Water Savings Estimator</h2>
             <p>See how much money and resources you can save monthly.</p>
         `
     },
@@ -81,7 +81,7 @@ const toolsData = [
         difficulty: "Medium",
         time: "Instant",
         content: `
-            <h3>Sustainable Shopping Assistant</h3>
+            <h2>Sustainable Shopping Assistant</h2>
             <p>Make better purchasing decisions with real environmental scores.</p>
         `
     },
@@ -94,7 +94,7 @@ const toolsData = [
         difficulty: "Medium",
         time: "Ongoing",
         content: `
-            <h3>Plastic Footprint Tracker</h3>
+            <h2>Plastic Footprint Tracker</h2>
             <p>Monitor your plastic usage and set reduction goals.</p>
         `
     }

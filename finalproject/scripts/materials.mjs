@@ -29,7 +29,7 @@ function renderMaterials(materials) {
 
   grid.innerHTML = materials.map(m => `
     <div class="material-card card" data-id="${m.id}">
-      <h2>${m.name}</h2>
+      <h3>${m.name}</h3>
       <p>${m.fullName}</p>
 
       <div class="material-info">

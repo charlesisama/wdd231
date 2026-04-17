@@ -176,8 +176,9 @@ nav.open {
 
 .navigation a:hover,
 .navigation a.active {
-  background: rgba(0, 135, 83, 0.08);
-  color: #003d26;
+  background: #008753;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* main hero section */
@@ -217,6 +218,7 @@ nav.open {
   left: 1.25rem;
   transform: translateY(-50%);
   color: #fff;
+  background-color: transparent;
   max-width: 560px;
   z-index: 2;
 }
@@ -277,7 +279,7 @@ nav.open {
 }
 
 .card {
-  background: white;
+  
   padding: 2rem 1.75rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);

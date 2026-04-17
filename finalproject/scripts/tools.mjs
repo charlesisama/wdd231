@@ -109,7 +109,7 @@ function renderTools() {
     <div class="tool-card">
       <img src="${tool.image}" alt="${tool.title}">
       <div class="tool-info">
-        <span class="tool-type">${tool.type}</span>
+        <span class="tool-type"><strong>${tool.type}</strong></span>
         <h3>${tool.title}</h3>
         <p>${tool.description}</p>
 

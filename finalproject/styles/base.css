@@ -107,7 +107,7 @@ header {
 
 .brand-subtitle {
   font-size: 0.75rem;
-  color: var(--primary);
+  color: #4a5d57;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -177,7 +177,7 @@ nav.open {
 .navigation a:hover,
 .navigation a.active {
   background: rgba(0, 135, 83, 0.08);
-  color: var(--primary);
+  color: #003d26;
 }
 
 /* main hero section */
@@ -209,13 +209,19 @@ nav.open {
     rgba(11, 61, 46, 0.45)
   );
 }
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 .hero-text {
   position: absolute;
   top: 50%;
   left: 8%;
   transform: translateY(-50%);
-  color: white;
+  color: var(--accent);
   max-width: 560px;
   z-index: 2;
 }

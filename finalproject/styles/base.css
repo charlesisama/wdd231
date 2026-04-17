@@ -199,29 +199,24 @@ nav.open {
   transform: scale(1.05);
 }
 
-.hero::after {
+
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(11, 61, 46, 0.88),
-    rgba(11, 61, 46, 0.45)
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3)
   );
-}
-.hero::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-text {
   position: absolute;
   top: 50%;
-  left: 8%;
+  left: 1.25rem;
   transform: translateY(-50%);
-  color: var(--accent);
+  color: #fff;
   max-width: 560px;
   z-index: 2;
 }
